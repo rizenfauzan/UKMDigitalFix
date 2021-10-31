@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_5sdp"
+        android:minHeight="@dimen/_36sdp"
+
+        android:translationZ="3dp">
+
+        <ImageView
+            android:id="@+id/logo_proyek"
+            android:layout_width="172dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:elevation="1dp"
+            android:foregroundGravity="left"
+            android:translationZ="1dp"
+            app:srcCompat="@drawable/logoukm" />
+
+
+        <ImageView
+            android:id="@+id/iv_notifikasi"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:src="@drawable/icon_notification" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/form2"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/bentuk_kotak_elips_putih_kecil"
+            android:hint="Masukkan Kategori"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="11dp"
+            android:paddingEnd="11dp"
+            android:paddingBottom="11dp"
+            android:textColorHint="@color/grey_muda"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:paddingTop="12.5dp"
+            android:paddingBottom="12.5dp"
+            android:src="@drawable/ikon_search"
+            app:tint="@color/grey_muda" />
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_rtikel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/card_item_artikel"/>
+
+</LinearLayout>

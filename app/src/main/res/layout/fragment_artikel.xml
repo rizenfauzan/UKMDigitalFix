@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_detail_pesan"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_width="match_parent"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+            android:translationZ="3dp">
+
+            <ImageView
+                android:id="@+id/img_kembali"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ikon_panah_kiri"
+                android:layout_marginEnd="@dimen/_14sdp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/toolbar_tittle"
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:text="Artikel Terkait"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_180sdp"
+
+                android:textColor="@color/colorBlack" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coffee"
+                    app:riv_corner_radius="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marketing"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/txt_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" | "/>
+                    <TextView
+                        android:id="@+id/txt_kategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Fadhilah Gatya Putri"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tips UMKM Bersikap Terbuka Akan Kritik dan Masukan Konsumen"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txt_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="inherit"
+                android:textSize="15sp"
+                android:text="Salah satu masalah yang dialami  oleh mayoritas pelaku usaha mikro kecil dan menengah (UMKM) adalah kurang memahami branding sebagai fungsi untuk menjaga kelangsungan usahanya. Kebanyakan para pelaku bisnis UMKM masih berfokus pada trading dan melupakan sisi branding."/>
+               </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="inherit"
+                android:textSize="15sp"
+                android:text="Mungkin sebagian pemilik UMKM berpikiran bahwa brand tidaklah terlalu penting. Namun nyatanya, kekuatan itu justru datang dari brand yang dibangun. Biasanya brand yang dibangun untuk UMKM berfokus pada desain ataupun logo dan tagline yang dibuat."/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="inherit"
+                android:textSize="15sp"
+                android:text="Dalam sesi Business Assessment Grab #TerusUsaha Akselerator UMKM yang diadakan oleh Grab for Good Grab Indonesia dan Komunitas Sahabat UMKM, Garniasih, Brand Strategist LAB/ID mengatakan Branding adalah sesuatu yang berbeda dengan brand. Kalau brand adalah produk yang dimiliki, tetapi kalau branding adalah suatu cara mengenalkan produk Anda dengan tujuan memperbesar serta membangun merek dari manfaat produk tersebut."/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="inherit"
+            android:textSize="15sp"
+            android:text="Menurutnya, Branding merupakan identitas dari produk usaha. Identitas di sini bisa berupa nama, logo, atau ciri khas lainnya yang bisa membedakan produk usaha  dengan kompetitor. Ciri khas ini akan menjadi daya tarik dan ingatan yang mengikat pada konsumen terhadap brand tersebut."/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share to"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ikon_facebook" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ikon_whatsapp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="100dp">
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <ImageButton
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ikon_bookmark"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Komentar"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/edtKomentar"
+                    android:layout_width="279dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/form2"
+                    android:hint="Berikan komentar Anda"
+                    android:paddingLeft="10dp"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="74dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="28dp"
+                    android:backgroundTint="@color/colorBlue"
+                    android:text="KIRIM"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvKomentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item_komentar"/>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
